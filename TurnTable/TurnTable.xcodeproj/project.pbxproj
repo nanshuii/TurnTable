@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A34AE266921C41E405F0C505 /* libPods-TurnTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CB73D667AE7A2A30733C03 /* libPods-TurnTable.a */; };
+		D3313A8722DD70D200FF3C3F /* LENTurnTableShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3313A8522DD70D200FF3C3F /* LENTurnTableShowViewController.m */; };
+		D3313A8822DD70D200FF3C3F /* LENTurnTableShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3313A8622DD70D200FF3C3F /* LENTurnTableShowViewController.xib */; };
+		D3313A9622E095BA00FF3C3F /* LENTurnTablePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3313A9422E095BA00FF3C3F /* LENTurnTablePreviewViewController.m */; };
+		D3313A9722E095BA00FF3C3F /* LENTurnTablePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3313A9522E095BA00FF3C3F /* LENTurnTablePreviewViewController.xib */; };
+		D375756E22D58346000F6DD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D375756D22D58346000F6DD1 /* AppDelegate.m */; };
+		D375757122D58346000F6DD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D375757022D58346000F6DD1 /* ViewController.m */; };
+		D375757422D58346000F6DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D375757222D58346000F6DD1 /* Main.storyboard */; };
+		D375757622D58347000F6DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D375757522D58347000F6DD1 /* Assets.xcassets */; };
+		D375757922D58347000F6DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D375757722D58347000F6DD1 /* LaunchScreen.storyboard */; };
+		D375757C22D58347000F6DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D375757B22D58347000F6DD1 /* main.m */; };
+		D375758622D58347000F6DD1 /* TurnTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D375758522D58347000F6DD1 /* TurnTableTests.m */; };
+		D375759122D58347000F6DD1 /* TurnTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D375759022D58347000F6DD1 /* TurnTableUITests.m */; };
+		D37575A822D58845000F6DD1 /* LENTurnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37575A622D58845000F6DD1 /* LENTurnTableViewController.m */; };
+		D37575A922D58845000F6DD1 /* LENTurnTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37575A722D58845000F6DD1 /* LENTurnTableViewController.xib */; };
+		D37575B022D589F1000F6DD1 /* LENTurnTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D37575AF22D589F1000F6DD1 /* LENTurnTableModel.m */; };
+		D37575B622D58EC0000F6DD1 /* LENHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D37575B522D58EC0000F6DD1 /* LENHandle.m */; };
+		D37575BC22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D37575BA22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.m */; };
+		D37575BD22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37575BB22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.xib */; };
+		D37575C122D5BA5F000F6DD1 /* LENAddTurnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37575BF22D5BA5F000F6DD1 /* LENAddTurnTableViewController.m */; };
+		D37575C222D5BA5F000F6DD1 /* LENAddTurnTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37575C022D5BA5F000F6DD1 /* LENAddTurnTableViewController.xib */; };
+		D37575C522D5BAA9000F6DD1 /* LENTurnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D37575C422D5BAA9000F6DD1 /* LENTurnTableView.m */; };
+		D37575CA22D5C01A000F6DD1 /* LENAddTrunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D37575C822D5C01A000F6DD1 /* LENAddTrunTableViewCell.m */; };
+		D37575CB22D5C01A000F6DD1 /* LENAddTrunTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37575C922D5C01A000F6DD1 /* LENAddTrunTableViewCell.xib */; };
+		D389A69922D5C60500890A87 /* LENAddTrunTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D389A69822D5C60500890A87 /* LENAddTrunTableModel.m */; };
+		D397BA8322D82EAE004A8C92 /* LENColorSelectImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BA8222D82EAE004A8C92 /* LENColorSelectImageView.m */; };
+		D397BA8522D82ED2004A8C92 /* palette.png in Resources */ = {isa = PBXBuildFile; fileRef = D397BA8422D82ED2004A8C92 /* palette.png */; };
+		D397BA8922D86B73004A8C92 /* LENColorSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BA8722D86B73004A8C92 /* LENColorSelectViewController.m */; };
+		D397BA8A22D86B73004A8C92 /* LENColorSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D397BA8822D86B73004A8C92 /* LENColorSelectViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D375758222D58347000F6DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D375756122D58346000F6DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D375756822D58346000F6DD1;
+			remoteInfo = TurnTable;
+		};
+		D375758D22D58347000F6DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D375756122D58346000F6DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D375756822D58346000F6DD1;
+			remoteInfo = TurnTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		497FF014CE5A8F8365F286FF /* Pods-TurnTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TurnTable/Pods-TurnTable.debug.xcconfig"; sourceTree = "<group>"; };
+		D3313A8422DD70D200FF3C3F /* LENTurnTableShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnTableShowViewController.h; sourceTree = "<group>"; };
+		D3313A8522DD70D200FF3C3F /* LENTurnTableShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENTurnTableShowViewController.m; sourceTree = "<group>"; };
+		D3313A8622DD70D200FF3C3F /* LENTurnTableShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENTurnTableShowViewController.xib; sourceTree = "<group>"; };
+		D3313A9322E095BA00FF3C3F /* LENTurnTablePreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnTablePreviewViewController.h; sourceTree = "<group>"; };
+		D3313A9422E095BA00FF3C3F /* LENTurnTablePreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENTurnTablePreviewViewController.m; sourceTree = "<group>"; };
+		D3313A9522E095BA00FF3C3F /* LENTurnTablePreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENTurnTablePreviewViewController.xib; sourceTree = "<group>"; };
+		D375756922D58346000F6DD1 /* TurnTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurnTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D375756C22D58346000F6DD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D375756D22D58346000F6DD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D375756F22D58346000F6DD1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D375757022D58346000F6DD1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D375757322D58346000F6DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D375757522D58347000F6DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D375757822D58347000F6DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D375757A22D58347000F6DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D375757B22D58347000F6DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D375758122D58347000F6DD1 /* TurnTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D375758522D58347000F6DD1 /* TurnTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurnTableTests.m; sourceTree = "<group>"; };
+		D375758722D58347000F6DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D375758C22D58347000F6DD1 /* TurnTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D375759022D58347000F6DD1 /* TurnTableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurnTableUITests.m; sourceTree = "<group>"; };
+		D375759222D58347000F6DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D375759E22D58369000F6DD1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D37575A522D58845000F6DD1 /* LENTurnTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnTableViewController.h; sourceTree = "<group>"; };
+		D37575A622D58845000F6DD1 /* LENTurnTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENTurnTableViewController.m; sourceTree = "<group>"; };
+		D37575A722D58845000F6DD1 /* LENTurnTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENTurnTableViewController.xib; sourceTree = "<group>"; };
+		D37575AE22D589F1000F6DD1 /* LENTurnTableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnTableModel.h; sourceTree = "<group>"; };
+		D37575AF22D589F1000F6DD1 /* LENTurnTableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENTurnTableModel.m; sourceTree = "<group>"; };
+		D37575B422D58EC0000F6DD1 /* LENHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENHandle.h; sourceTree = "<group>"; };
+		D37575B522D58EC0000F6DD1 /* LENHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENHandle.m; sourceTree = "<group>"; };
+		D37575B722D58FAA000F6DD1 /* LENTurnTableDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnTableDefine.h; sourceTree = "<group>"; };
+		D37575B922D5B6B8000F6DD1 /* LENTurnTableTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnTableTableViewCell.h; sourceTree = "<group>"; };
+		D37575BA22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENTurnTableTableViewCell.m; sourceTree = "<group>"; };
+		D37575BB22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENTurnTableTableViewCell.xib; sourceTree = "<group>"; };
+		D37575BE22D5BA5F000F6DD1 /* LENAddTurnTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENAddTurnTableViewController.h; sourceTree = "<group>"; };
+		D37575BF22D5BA5F000F6DD1 /* LENAddTurnTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENAddTurnTableViewController.m; sourceTree = "<group>"; };
+		D37575C022D5BA5F000F6DD1 /* LENAddTurnTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENAddTurnTableViewController.xib; sourceTree = "<group>"; };
+		D37575C322D5BAA9000F6DD1 /* LENTurnTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LENTurnTableView.h; sourceTree = "<group>"; };
+		D37575C422D5BAA9000F6DD1 /* LENTurnTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LENTurnTableView.m; sourceTree = "<group>"; };
+		D37575C722D5C01A000F6DD1 /* LENAddTrunTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENAddTrunTableViewCell.h; sourceTree = "<group>"; };
+		D37575C822D5C01A000F6DD1 /* LENAddTrunTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENAddTrunTableViewCell.m; sourceTree = "<group>"; };
+		D37575C922D5C01A000F6DD1 /* LENAddTrunTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENAddTrunTableViewCell.xib; sourceTree = "<group>"; };
+		D389A69722D5C60500890A87 /* LENAddTrunTableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENAddTrunTableModel.h; sourceTree = "<group>"; };
+		D389A69822D5C60500890A87 /* LENAddTrunTableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENAddTrunTableModel.m; sourceTree = "<group>"; };
+		D397BA8122D82EAE004A8C92 /* LENColorSelectImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENColorSelectImageView.h; sourceTree = "<group>"; };
+		D397BA8222D82EAE004A8C92 /* LENColorSelectImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENColorSelectImageView.m; sourceTree = "<group>"; };
+		D397BA8422D82ED2004A8C92 /* palette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = palette.png; sourceTree = "<group>"; };
+		D397BA8622D86B73004A8C92 /* LENColorSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENColorSelectViewController.h; sourceTree = "<group>"; };
+		D397BA8722D86B73004A8C92 /* LENColorSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENColorSelectViewController.m; sourceTree = "<group>"; };
+		D397BA8822D86B73004A8C92 /* LENColorSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENColorSelectViewController.xib; sourceTree = "<group>"; };
+		E0CB73D667AE7A2A30733C03 /* libPods-TurnTable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TurnTable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7AF6BB793C3A5102C5018CB /* Pods-TurnTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-TurnTable/Pods-TurnTable.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D375756622D58346000F6DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34AE266921C41E405F0C505 /* libPods-TurnTable.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D375757E22D58347000F6DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D375758922D58347000F6DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99DEFA254EB697B2C887A31F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0CB73D667AE7A2A30733C03 /* libPods-TurnTable.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D375756022D58346000F6DD1 = {
+			isa = PBXGroup;
+			children = (
+				D375756B22D58346000F6DD1 /* TurnTable */,
+				D375758422D58347000F6DD1 /* TurnTableTests */,
+				D375758F22D58347000F6DD1 /* TurnTableUITests */,
+				D375756A22D58346000F6DD1 /* Products */,
+				EEB658F5F5129959D0CA6B94 /* Pods */,
+				99DEFA254EB697B2C887A31F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D375756A22D58346000F6DD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D375756922D58346000F6DD1 /* TurnTable.app */,
+				D375758122D58347000F6DD1 /* TurnTableTests.xctest */,
+				D375758C22D58347000F6DD1 /* TurnTableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D375756B22D58346000F6DD1 /* TurnTable */ = {
+			isa = PBXGroup;
+			children = (
+				D37575C622D5BAB3000F6DD1 /* view */,
+				D37575AA22D58946000F6DD1 /* Model */,
+				D375759F22D584EF000F6DD1 /* Main */,
+				D375756C22D58346000F6DD1 /* AppDelegate.h */,
+				D375756D22D58346000F6DD1 /* AppDelegate.m */,
+				D375756F22D58346000F6DD1 /* ViewController.h */,
+				D375757022D58346000F6DD1 /* ViewController.m */,
+				D375757222D58346000F6DD1 /* Main.storyboard */,
+				D375757522D58347000F6DD1 /* Assets.xcassets */,
+				D375757722D58347000F6DD1 /* LaunchScreen.storyboard */,
+				D397BA8422D82ED2004A8C92 /* palette.png */,
+				D375757A22D58347000F6DD1 /* Info.plist */,
+				D375757B22D58347000F6DD1 /* main.m */,
+				D375759E22D58369000F6DD1 /* PrefixHeader.pch */,
+				D37575B722D58FAA000F6DD1 /* LENTurnTableDefine.h */,
+			);
+			path = TurnTable;
+			sourceTree = "<group>";
+		};
+		D375758422D58347000F6DD1 /* TurnTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				D375758522D58347000F6DD1 /* TurnTableTests.m */,
+				D375758722D58347000F6DD1 /* Info.plist */,
+			);
+			path = TurnTableTests;
+			sourceTree = "<group>";
+		};
+		D375758F22D58347000F6DD1 /* TurnTableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D375759022D58347000F6DD1 /* TurnTableUITests.m */,
+				D375759222D58347000F6DD1 /* Info.plist */,
+			);
+			path = TurnTableUITests;
+			sourceTree = "<group>";
+		};
+		D375759F22D584EF000F6DD1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D389A69622D5C5F100890A87 /* model */,
+				D37575B822D5B6A3000F6DD1 /* view */,
+				D37575A522D58845000F6DD1 /* LENTurnTableViewController.h */,
+				D37575A622D58845000F6DD1 /* LENTurnTableViewController.m */,
+				D37575A722D58845000F6DD1 /* LENTurnTableViewController.xib */,
+				D37575BE22D5BA5F000F6DD1 /* LENAddTurnTableViewController.h */,
+				D37575BF22D5BA5F000F6DD1 /* LENAddTurnTableViewController.m */,
+				D37575C022D5BA5F000F6DD1 /* LENAddTurnTableViewController.xib */,
+				D397BA8622D86B73004A8C92 /* LENColorSelectViewController.h */,
+				D397BA8722D86B73004A8C92 /* LENColorSelectViewController.m */,
+				D397BA8822D86B73004A8C92 /* LENColorSelectViewController.xib */,
+				D3313A8422DD70D200FF3C3F /* LENTurnTableShowViewController.h */,
+				D3313A8522DD70D200FF3C3F /* LENTurnTableShowViewController.m */,
+				D3313A8622DD70D200FF3C3F /* LENTurnTableShowViewController.xib */,
+				D3313A9322E095BA00FF3C3F /* LENTurnTablePreviewViewController.h */,
+				D3313A9422E095BA00FF3C3F /* LENTurnTablePreviewViewController.m */,
+				D3313A9522E095BA00FF3C3F /* LENTurnTablePreviewViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D37575AA22D58946000F6DD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D37575AE22D589F1000F6DD1 /* LENTurnTableModel.h */,
+				D37575AF22D589F1000F6DD1 /* LENTurnTableModel.m */,
+				D37575B422D58EC0000F6DD1 /* LENHandle.h */,
+				D37575B522D58EC0000F6DD1 /* LENHandle.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D37575B822D5B6A3000F6DD1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D37575B922D5B6B8000F6DD1 /* LENTurnTableTableViewCell.h */,
+				D37575BA22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.m */,
+				D37575BB22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.xib */,
+				D37575C722D5C01A000F6DD1 /* LENAddTrunTableViewCell.h */,
+				D37575C822D5C01A000F6DD1 /* LENAddTrunTableViewCell.m */,
+				D37575C922D5C01A000F6DD1 /* LENAddTrunTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D37575C622D5BAB3000F6DD1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D37575C322D5BAA9000F6DD1 /* LENTurnTableView.h */,
+				D37575C422D5BAA9000F6DD1 /* LENTurnTableView.m */,
+				D397BA8122D82EAE004A8C92 /* LENColorSelectImageView.h */,
+				D397BA8222D82EAE004A8C92 /* LENColorSelectImageView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D389A69622D5C5F100890A87 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D389A69722D5C60500890A87 /* LENAddTrunTableModel.h */,
+				D389A69822D5C60500890A87 /* LENAddTrunTableModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		EEB658F5F5129959D0CA6B94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				497FF014CE5A8F8365F286FF /* Pods-TurnTable.debug.xcconfig */,
+				F7AF6BB793C3A5102C5018CB /* Pods-TurnTable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D375756822D58346000F6DD1 /* TurnTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D375759522D58347000F6DD1 /* Build configuration list for PBXNativeTarget "TurnTable" */;
+			buildPhases = (
+				FBF9D17BB6C3630CA5199494 /* [CP] Check Pods Manifest.lock */,
+				D375756522D58346000F6DD1 /* Sources */,
+				D375756622D58346000F6DD1 /* Frameworks */,
+				D375756722D58346000F6DD1 /* Resources */,
+				142E7B1C7F0178F454FD5915 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TurnTable;
+			productName = TurnTable;
+			productReference = D375756922D58346000F6DD1 /* TurnTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D375758022D58347000F6DD1 /* TurnTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D375759822D58347000F6DD1 /* Build configuration list for PBXNativeTarget "TurnTableTests" */;
+			buildPhases = (
+				D375757D22D58347000F6DD1 /* Sources */,
+				D375757E22D58347000F6DD1 /* Frameworks */,
+				D375757F22D58347000F6DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D375758322D58347000F6DD1 /* PBXTargetDependency */,
+			);
+			name = TurnTableTests;
+			productName = TurnTableTests;
+			productReference = D375758122D58347000F6DD1 /* TurnTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D375758B22D58347000F6DD1 /* TurnTableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D375759B22D58347000F6DD1 /* Build configuration list for PBXNativeTarget "TurnTableUITests" */;
+			buildPhases = (
+				D375758822D58347000F6DD1 /* Sources */,
+				D375758922D58347000F6DD1 /* Frameworks */,
+				D375758A22D58347000F6DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D375758E22D58347000F6DD1 /* PBXTargetDependency */,
+			);
+			name = TurnTableUITests;
+			productName = TurnTableUITests;
+			productReference = D375758C22D58347000F6DD1 /* TurnTableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D375756122D58346000F6DD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LEN;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ledon;
+				TargetAttributes = {
+					D375756822D58346000F6DD1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D375758022D58347000F6DD1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D375756822D58346000F6DD1;
+					};
+					D375758B22D58347000F6DD1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D375756822D58346000F6DD1;
+					};
+				};
+			};
+			buildConfigurationList = D375756422D58346000F6DD1 /* Build configuration list for PBXProject "TurnTable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D375756022D58346000F6DD1;
+			productRefGroup = D375756A22D58346000F6DD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D375756822D58346000F6DD1 /* TurnTable */,
+				D375758022D58347000F6DD1 /* TurnTableTests */,
+				D375758B22D58347000F6DD1 /* TurnTableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D375756722D58346000F6DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37575C222D5BA5F000F6DD1 /* LENAddTurnTableViewController.xib in Resources */,
+				D375757922D58347000F6DD1 /* LaunchScreen.storyboard in Resources */,
+				D375757622D58347000F6DD1 /* Assets.xcassets in Resources */,
+				D37575A922D58845000F6DD1 /* LENTurnTableViewController.xib in Resources */,
+				D397BA8A22D86B73004A8C92 /* LENColorSelectViewController.xib in Resources */,
+				D3313A9722E095BA00FF3C3F /* LENTurnTablePreviewViewController.xib in Resources */,
+				D3313A8822DD70D200FF3C3F /* LENTurnTableShowViewController.xib in Resources */,
+				D375757422D58346000F6DD1 /* Main.storyboard in Resources */,
+				D397BA8522D82ED2004A8C92 /* palette.png in Resources */,
+				D37575BD22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.xib in Resources */,
+				D37575CB22D5C01A000F6DD1 /* LENAddTrunTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D375757F22D58347000F6DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D375758A22D58347000F6DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		142E7B1C7F0178F454FD5915 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TurnTable/Pods-TurnTable-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TurnTable/Pods-TurnTable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF9D17BB6C3630CA5199494 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TurnTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D375756522D58346000F6DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3313A8722DD70D200FF3C3F /* LENTurnTableShowViewController.m in Sources */,
+				D389A69922D5C60500890A87 /* LENAddTrunTableModel.m in Sources */,
+				D3313A9622E095BA00FF3C3F /* LENTurnTablePreviewViewController.m in Sources */,
+				D37575BC22D5B6B8000F6DD1 /* LENTurnTableTableViewCell.m in Sources */,
+				D375757122D58346000F6DD1 /* ViewController.m in Sources */,
+				D37575CA22D5C01A000F6DD1 /* LENAddTrunTableViewCell.m in Sources */,
+				D397BA8322D82EAE004A8C92 /* LENColorSelectImageView.m in Sources */,
+				D397BA8922D86B73004A8C92 /* LENColorSelectViewController.m in Sources */,
+				D37575C122D5BA5F000F6DD1 /* LENAddTurnTableViewController.m in Sources */,
+				D37575B622D58EC0000F6DD1 /* LENHandle.m in Sources */,
+				D375757C22D58347000F6DD1 /* main.m in Sources */,
+				D37575A822D58845000F6DD1 /* LENTurnTableViewController.m in Sources */,
+				D37575C522D5BAA9000F6DD1 /* LENTurnTableView.m in Sources */,
+				D37575B022D589F1000F6DD1 /* LENTurnTableModel.m in Sources */,
+				D375756E22D58346000F6DD1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D375757D22D58347000F6DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D375758622D58347000F6DD1 /* TurnTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D375758822D58347000F6DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D375759122D58347000F6DD1 /* TurnTableUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D375758322D58347000F6DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D375756822D58346000F6DD1 /* TurnTable */;
+			targetProxy = D375758222D58347000F6DD1 /* PBXContainerItemProxy */;
+		};
+		D375758E22D58347000F6DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D375756822D58346000F6DD1 /* TurnTable */;
+			targetProxy = D375758D22D58347000F6DD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D375757222D58346000F6DD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D375757322D58346000F6DD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D375757722D58347000F6DD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D375757822D58347000F6DD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D375759322D58347000F6DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D375759422D58347000F6DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D375759622D58347000F6DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497FF014CE5A8F8365F286FF /* Pods-TurnTable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF2WD834FA;
+				GCC_PREFIX_HEADER = /Users/daimengren/programming/TurnTable/TurnTable/TurnTable/PrefixHeader.pch;
+				INFOPLIST_FILE = TurnTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.TurnTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D375759722D58347000F6DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7AF6BB793C3A5102C5018CB /* Pods-TurnTable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF2WD834FA;
+				GCC_PREFIX_HEADER = /Users/daimengren/programming/TurnTable/TurnTable/TurnTable/PrefixHeader.pch;
+				INFOPLIST_FILE = TurnTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.TurnTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D375759922D58347000F6DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBPYVNBPCC;
+				INFOPLIST_FILE = TurnTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.TurnTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurnTable.app/TurnTable";
+			};
+			name = Debug;
+		};
+		D375759A22D58347000F6DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBPYVNBPCC;
+				INFOPLIST_FILE = TurnTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.TurnTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurnTable.app/TurnTable";
+			};
+			name = Release;
+		};
+		D375759C22D58347000F6DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBPYVNBPCC;
+				INFOPLIST_FILE = TurnTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.TurnTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TurnTable;
+			};
+			name = Debug;
+		};
+		D375759D22D58347000F6DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBPYVNBPCC;
+				INFOPLIST_FILE = TurnTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.TurnTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TurnTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D375756422D58346000F6DD1 /* Build configuration list for PBXProject "TurnTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D375759322D58347000F6DD1 /* Debug */,
+				D375759422D58347000F6DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D375759522D58347000F6DD1 /* Build configuration list for PBXNativeTarget "TurnTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D375759622D58347000F6DD1 /* Debug */,
+				D375759722D58347000F6DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D375759822D58347000F6DD1 /* Build configuration list for PBXNativeTarget "TurnTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D375759922D58347000F6DD1 /* Debug */,
+				D375759A22D58347000F6DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D375759B22D58347000F6DD1 /* Build configuration list for PBXNativeTarget "TurnTableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D375759C22D58347000F6DD1 /* Debug */,
+				D375759D22D58347000F6DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D375756122D58346000F6DD1 /* Project object */;
+}
