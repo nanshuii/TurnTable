@@ -48,6 +48,44 @@
     }
 }
 
+# pragma mark -- 更新罗盘的名字
++ (void)updateTurnTableName:(NSString *)name tid:(NSString *)t_id{
+    NSArray *array = [self getTurnTablesArray];
+    if (array && array.count > 0) {
+        NSMutableArray *models = [NSMutableArray arrayWithArray:array];
+        for (int i = 0; i < models.count; i++) {
+            NSDictionary *m_dict = models[i];
+            NSString *m_id = [m_dict valueForKey:@"t_id"];
+            if ([t_id isEqualToString:m_id]) {
+                NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:m_dict];
+                [dict setValue:name forKey:@"name"];
+                [models replaceObjectAtIndex:i withObject:dict];
+                [self saveTurnTablesArray:models];
+                break;
+            }
+        }
+    }
+}
+
+# pragma mark -- 更新罗盘的配色
++ (void)updateTurnTableColors:(NSMutableArray *)colors tid:(NSString *)t_id{
+    NSArray *array = [self getTurnTablesArray];
+    if (array && array.count > 0) {
+        NSMutableArray *models = [NSMutableArray arrayWithArray:array];
+        for (int i = 0; i < models.count; i++) {
+            NSDictionary *m_dict = models[i];
+            NSString *m_id = [m_dict valueForKey:@"t_id"];
+            if ([t_id isEqualToString:m_id]) {
+                NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:m_dict];
+                [dict setValue:colors forKey:@"colors"];
+                [models replaceObjectAtIndex:i withObject:dict];
+                [self saveTurnTablesArray:models];
+                break;
+            }
+        }
+    }
+}
+
 # pragma mark -- 获取罗盘列表数组
 + (NSArray *)getTurnTablesArray{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

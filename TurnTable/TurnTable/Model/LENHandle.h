@@ -34,6 +34,21 @@ typedef void(^AlertTextFieldBlock)(NSString *text);
  */
 + (void)updateTurnTable:(LENTurnTableModel *)model;
 
+/**
+ 更新一个罗盘的名字
+
+ @param name name description
+ @param t_id t_id description
+ */
++ (void)updateTurnTableName:(NSString *)name tid:(NSString *)t_id;
+
+/**
+ 更新一个罗盘的配色
+
+ @param colors colors description
+ @param t_id t_id description
+ */
++ (void)updateTurnTableColors:(NSMutableArray *)colors tid:(NSString *)t_id;
 
 /**
  从字符串数组颜色中获取16进制颜色

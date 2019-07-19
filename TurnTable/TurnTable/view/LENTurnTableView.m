@@ -20,8 +20,6 @@
 
 @property (nonatomic, strong) NSMutableArray *angles;
 
-@property (nonatomic, strong) NSMutableArray *colors;
-
 @property (nonatomic, assign) BOOL isCycle; // 是否正在旋转
 
 @property (nonatomic, assign) BOOL animation; // 是否开启动画

@@ -16,6 +16,8 @@ typedef void(^FoodBlock)(NSString *title, int index);
 
 @property (nonatomic, copy) FoodBlock foodBlock;
 
+@property (nonatomic, strong) NSMutableArray *colors;
+
 /**
  初始化 比率相同 并且颜色随机
 
