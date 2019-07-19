@@ -91,6 +91,22 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.models.count > 0) {
+        return YES;
+    }
+    return NO;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSInteger row = indexPath.row;
+    LENLog(@"删除 row = %i", row);
+    LENTurnTableModel *model = self.models[row];
+    [LENHandle deleteTurnTableWithTid:model.t_id];
+    [self.models removeObjectAtIndex:row];
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:(UITableViewRowAnimationNone)];
+}
+
 
 
 

@@ -51,6 +51,13 @@ typedef void(^AlertTextFieldBlock)(NSString *text);
 + (void)updateTurnTableColors:(NSMutableArray *)colors tid:(NSString *)t_id;
 
 /**
+ 删除一个罗盘
+
+ @param t_id t_id description
+ */
++ (void)deleteTurnTableWithTid:(NSString *)t_id;
+
+/**
  从字符串数组颜色中获取16进制颜色
 
  @param colors colors description

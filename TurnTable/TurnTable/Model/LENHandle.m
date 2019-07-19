@@ -86,6 +86,23 @@
     }
 }
 
+# pragma mark -- 删除一个罗盘
++ (void)deleteTurnTableWithTid:(NSString *)t_id{
+    NSArray *array = [self getTurnTablesArray];
+    if (array && array.count > 0) {
+        NSMutableArray *models = [NSMutableArray arrayWithArray:array];
+        for (int i = 0; i < models.count; i++) {
+            NSDictionary *m_dict = models[i];
+            NSString *m_id = [m_dict valueForKey:@"t_id"];
+            if ([t_id isEqualToString:m_id]) {
+                [models removeObjectAtIndex:i];
+                [self saveTurnTablesArray:models];
+                break;
+            }
+        }
+    }
+}
+
 # pragma mark -- 获取罗盘列表数组
 + (NSArray *)getTurnTablesArray{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
