@@ -7,6 +7,7 @@
 //
 
 #import "LENHandle.h"
+#import "LENTurnTableView.h"
 
 @implementation LENHandle
 
@@ -134,6 +135,7 @@
             NSString *m_id = [m_dict valueForKey:@"t_id"];
             if ([t_id isEqualToString:m_id]) {
                 [models removeObjectAtIndex:i];
+                [self deleteTurnTableImageWithTid:t_id];
                 [self saveTurnTablesArray:models];
                 break;
             }
@@ -337,6 +339,53 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setValue:[NSNumber numberWithBool:record] forKey:KTurnTableRecordOpen];
     [defaults synchronize];
+}
+
+# pragma mark -- 生成一张缩略图
++ (void)turnTableImageCreateWithModel:(LENTurnTableModel *)model{
+    NSMutableArray *colors = [LENHandle getColorsFormTurnTableModel:model];
+    LENTurnTableView *turnTableView = [[LENTurnTableView alloc] initWithFrame:CGRectMake(10, 0, kFullScreenWidth - 20, kFullScreenWidth - 20) titles:model.titles rates:model.rates colors:colors];
+    turnTableView.backgroundColor = [UIColor whiteColor];
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(kFullScreenWidth - 20, kFullScreenWidth - 20), YES, [UIScreen mainScreen].scale);
+    [turnTableView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    if (image) {
+        NSData *imageData = UIImagePNGRepresentation(image);
+        if (imageData) {
+            NSString *filename = [NSString stringWithFormat:@"turnTableImage-%@.png", model.t_id];
+            NSString *path = [PATHS stringByAppendingPathComponent:filename];
+            [imageData writeToFile:path atomically:YES];
+        }
+    }
+}
+
+# pragma mark -- 获取缩略图
++ (UIImage *)getTurnTableImageWithTid:(NSString *)t_id {
+    UIImage *image = nil;
+    NSString *filename = [NSString stringWithFormat:@"turnTableImage-%@.png", t_id];
+    NSString *path = [PATHS stringByAppendingPathComponent:filename];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL exist = [fileManager fileExistsAtPath:path];
+    if (exist) {
+        image = [UIImage imageWithContentsOfFile:path];
+    }
+    return image;
+}
+
+# pragma mark -- 删除缩略图
++ (void)deleteTurnTableImageWithTid:(NSString *)t_id{
+    NSString *filename = [NSString stringWithFormat:@"turnTableImage-%@.png", t_id];
+    NSString *path = [PATHS stringByAppendingPathComponent:filename];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL exist = [fileManager fileExistsAtPath:path];
+    if (exist) {
+        NSError *error;
+        [fileManager removeItemAtPath:path error:&error];
+        if (error) {
+            LENLog(@"error = %@", error.description);
+        }
+    }
 }
 
 @end

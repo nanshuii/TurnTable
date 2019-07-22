@@ -9,7 +9,7 @@
 #ifndef LENTurnTableDefine_h
 #define LENTurnTableDefine_h
 
-
+#define   PATHS [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0]
 
 
 

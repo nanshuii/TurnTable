@@ -152,6 +152,21 @@ typedef void(^AlertTextFieldBlock)(NSString *text);
  */
 + (void)setTurnTableRecord:(BOOL)record;
 
+/**
+ 生成一张缩略图
+
+ @param model model description
+ */
++ (void)turnTableImageCreateWithModel:(LENTurnTableModel *)model;
+
+/**
+ 获取缩略图
+
+ @param t_id t_id description
+ @return return value description
+ */
++ (UIImage *)getTurnTableImageWithTid:(NSString *)t_id;
+
 @end
 
 NS_ASSUME_NONNULL_END

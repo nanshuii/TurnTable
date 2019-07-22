@@ -228,6 +228,7 @@
         [LENHandle updateTurnTable:self.model];
         [[NSNotificationCenter defaultCenter] postNotificationName:kTurnTableShowChange object:self.model];
     }
+    [LENHandle turnTableImageCreateWithModel:self.model];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

@@ -104,6 +104,7 @@
     [LENHandle updateTurnTableColors:self.turnTableView.colors tid:self.model.t_id];
     self.model.colors = self.turnTableView.colors;
     self.menuView.hidden = YES;
+    [LENHandle turnTableImageCreateWithModel:self.model];
 }
 
 // 菜单隐藏

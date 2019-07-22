@@ -23,6 +23,8 @@
 
 - (void)configWithModel:(LENTurnTableModel *)model{
     self.titleLabel.text = model.name;
+    UIImage *image = [LENHandle getTurnTableImageWithTid:model.t_id];
+    self.image.image = image;
 }
 
 @end

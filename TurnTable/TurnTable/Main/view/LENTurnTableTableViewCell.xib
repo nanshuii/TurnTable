@@ -25,14 +25,24 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-41-lZP">
+                        <rect key="frame" x="255" y="-3.5" width="50" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="hPh-i1-WU0"/>
+                            <constraint firstAttribute="width" constant="50" id="nxK-Yq-wap"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="QDN-41-lZP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Itl-PH-O1I"/>
+                    <constraint firstAttribute="trailing" secondItem="QDN-41-lZP" secondAttribute="trailing" constant="15" id="MRY-IP-3sY"/>
                     <constraint firstItem="pH5-k4-rUo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="glV-f6-lmV"/>
                     <constraint firstItem="pH5-k4-rUo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yJr-nh-vTe"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="image" destination="QDN-41-lZP" id="wA4-fa-T9k"/>
                 <outlet property="titleLabel" destination="pH5-k4-rUo" id="xBJ-N4-f4X"/>
             </connections>
         </tableViewCell>
