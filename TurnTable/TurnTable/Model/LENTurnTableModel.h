@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *status;
 
+@property (nonatomic, copy) NSMutableArray *historys; // 记录的历史
+
 @end
 
 NS_ASSUME_NONNULL_END

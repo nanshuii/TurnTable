@@ -10,6 +10,7 @@
 #import "LENTurnTableTableViewCell.h"
 #import "LENAddTurnTableViewController.h"
 #import "LENTurnTableShowViewController.h"
+#import "LENSettingViewController.h"
 
 @interface LENTurnTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -40,6 +41,7 @@
     [self.navigationItem setLeftBarButtonItem:addItem];
     UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithTitle:@"setting" style:(UIBarButtonItemStyleDone) target:self action:@selector(setting)];
     [self.navigationItem setRightBarButtonItem:settingItem];
+    
     [self.contentView addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.contentView.mas_top);
@@ -60,6 +62,8 @@
 # pragma mark -- setting
 - (void)setting{
     LENLog(@"setting");
+    LENSettingViewController *vc = [LENSettingViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 # pragma mark -- tableView
@@ -100,7 +104,6 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     NSInteger row = indexPath.row;
-    LENLog(@"删除 row = %i", row);
     LENTurnTableModel *model = self.models[row];
     [LENHandle deleteTurnTableWithTid:model.t_id];
     [self.models removeObjectAtIndex:row];

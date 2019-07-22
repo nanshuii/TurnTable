@@ -16,6 +16,8 @@
 
 # pragma mark -- 键值
 #define kTurnTables @"kTurnTables"
+#define KTurnTableRecordOpen @"KTurnTableRecordOpen" // 罗盘记录功能的开启和关闭
+
 
 # pragma mark -- 通知的键值
 #define kAddTurnTableChange @"kAddTurnTableChange"

@@ -9,12 +9,17 @@
 #import "LENTurnTableShowViewController.h"
 #import "LENTurnTableView.h"
 #import "LENAddTurnTableViewController.h"
+#import "LENTurnTableHistoryViewController.h"
 
 @interface LENTurnTableShowViewController ()
 
 @property (nonatomic, strong) LENTurnTableView *turnTableView;
 
 @property (nonatomic, strong) NSMutableArray *colors;
+
+@property (nonatomic, copy) NSString *currentSelect;
+
+@property (nonatomic, strong) NSMutableArray *historys;
 
 @end
 
@@ -30,13 +35,22 @@
 - (void)setUpUI{
     WEAKSELF(weakSelf);
     self.title = self.model.name;
+    self.currentSelect = nil;
     UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithTitle:@"edit" style:(UIBarButtonItemStyleDone) target:self action:@selector(edit)];
     [self.navigationItem setRightBarButtonItem:editItem];
+    
+    BOOL recordOpen = [LENHandle getTurnTableRecord];
+    if (recordOpen == NO) {
+        self.historyButton.enabled = NO;
+        self.historySaveButton.enabled = NO;
+    }
+    
     self.colors = [LENHandle getColorsFormTurnTableModel:self.model];
     self.turnTableView = [[LENTurnTableView alloc] initWithFrame:CGRectMake(10, 0, kFullScreenWidth - 20, kFullScreenWidth - 20) titles:self.model.titles rates:self.model.rates colors:self.colors];
     [self.turnTableView setFoodBlock:^(NSString * _Nonnull title, int index) {
         LENLog(@"title = %@ index = %i", title, index);
         weakSelf.nameLabel.text = title;
+        weakSelf.currentSelect = title;
     }];
     [self.contentView addSubview:self.turnTableView];
     self.nameLabel.text = self.model.name;
@@ -78,6 +92,7 @@
 // 编辑罗盘
 - (IBAction)editTurnTable:(id)sender {
     self.menuView.hidden = YES;
+    self.currentSelect = nil;
     LENAddTurnTableViewController *vc = [LENAddTurnTableViewController new];
     vc.isNew = NO;
     vc.model = self.model;
@@ -87,6 +102,7 @@
 // 保存配色
 - (IBAction)saveColors:(id)sender {
     [LENHandle updateTurnTableColors:self.turnTableView.colors tid:self.model.t_id];
+    self.model.colors = self.turnTableView.colors;
     self.menuView.hidden = YES;
 }
 
@@ -95,11 +111,9 @@
     self.menuView.hidden = YES;
 }
 
-
-
-
 # pragma mark -- reopen
 - (void)reopen:(NSNotification *)notification{
+    WEAKSELF(weakSelf);
     self.model = (LENTurnTableModel *)notification.object;
     [self.turnTableView removeFromSuperview];
     self.turnTableView = nil;
@@ -107,8 +121,39 @@
     self.turnTableView = [[LENTurnTableView alloc] initWithFrame:CGRectMake(10, 0, kFullScreenWidth - 20, kFullScreenWidth) titles:self.model.titles rates:self.model.rates colors:self.colors];
     [self.turnTableView setFoodBlock:^(NSString * _Nonnull title, int index) {
         LENLog(@"title = %@ index = %i", title, index);
+        weakSelf.nameLabel.text = title;
+        weakSelf.currentSelect = title;
     }];
     [self.contentView addSubview:self.turnTableView];
+}
+
+# pragma mark -- 记录
+// 保存这次记录
+- (IBAction)saveHistory:(id)sender {
+    if (self.currentSelect) {
+        NSDate *date = [NSDate date];
+        NSDateFormatter *dateFormatter = [NSDateFormatter new];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        NSString *dateString = [dateFormatter stringFromDate:date];
+        LENLog(@"title = %@ dateString = %@", self.currentSelect, dateString);
+        NSMutableArray *historys = [NSMutableArray arrayWithArray:self.model.historys];
+        NSDictionary *dict = @{
+                               @"title": self.currentSelect,
+                               @"date": dateString
+                               };
+        [historys insertObject:dict atIndex:0];
+        self.model.historys = historys;
+        [LENHandle updateTurnTable:self.model];
+        [LENHandle alertWithMessage:@"保存成功" vc:self];
+    } else {
+        [LENHandle alertWithMessage:@"请转动" vc:self];
+    }
+}
+// 查看记录
+- (IBAction)history:(id)sender {
+    LENTurnTableHistoryViewController *vc = [LENTurnTableHistoryViewController new];
+    vc.model = self.model;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

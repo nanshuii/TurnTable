@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A34AE266921C41E405F0C505 /* libPods-TurnTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CB73D667AE7A2A30733C03 /* libPods-TurnTable.a */; };
+		D302686222E5DB4900FB4EC4 /* LENSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D302686022E5DB4900FB4EC4 /* LENSettingViewController.m */; };
+		D302686322E5DB4900FB4EC4 /* LENSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D302686122E5DB4900FB4EC4 /* LENSettingViewController.xib */; };
 		D3313A8722DD70D200FF3C3F /* LENTurnTableShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3313A8522DD70D200FF3C3F /* LENTurnTableShowViewController.m */; };
 		D3313A8822DD70D200FF3C3F /* LENTurnTableShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3313A8622DD70D200FF3C3F /* LENTurnTableShowViewController.xib */; };
 		D3313A9622E095BA00FF3C3F /* LENTurnTablePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3313A9422E095BA00FF3C3F /* LENTurnTablePreviewViewController.m */; };
@@ -36,6 +38,10 @@
 		D397BA8522D82ED2004A8C92 /* palette.png in Resources */ = {isa = PBXBuildFile; fileRef = D397BA8422D82ED2004A8C92 /* palette.png */; };
 		D397BA8922D86B73004A8C92 /* LENColorSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BA8722D86B73004A8C92 /* LENColorSelectViewController.m */; };
 		D397BA8A22D86B73004A8C92 /* LENColorSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D397BA8822D86B73004A8C92 /* LENColorSelectViewController.xib */; };
+		D3D5F60822E1B642009A3F90 /* LENTurnTableHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D5F60622E1B642009A3F90 /* LENTurnTableHistoryViewController.m */; };
+		D3D5F60922E1B642009A3F90 /* LENTurnTableHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D5F60722E1B642009A3F90 /* LENTurnTableHistoryViewController.xib */; };
+		D3D5F60D22E1B790009A3F90 /* LENTurnHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D5F60B22E1B790009A3F90 /* LENTurnHistoryTableViewCell.m */; };
+		D3D5F60E22E1B790009A3F90 /* LENTurnHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D5F60C22E1B790009A3F90 /* LENTurnHistoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,9 @@
 
 /* Begin PBXFileReference section */
 		497FF014CE5A8F8365F286FF /* Pods-TurnTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TurnTable/Pods-TurnTable.debug.xcconfig"; sourceTree = "<group>"; };
+		D302685F22E5DB4900FB4EC4 /* LENSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENSettingViewController.h; sourceTree = "<group>"; };
+		D302686022E5DB4900FB4EC4 /* LENSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENSettingViewController.m; sourceTree = "<group>"; };
+		D302686122E5DB4900FB4EC4 /* LENSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENSettingViewController.xib; sourceTree = "<group>"; };
 		D3313A8422DD70D200FF3C3F /* LENTurnTableShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnTableShowViewController.h; sourceTree = "<group>"; };
 		D3313A8522DD70D200FF3C3F /* LENTurnTableShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENTurnTableShowViewController.m; sourceTree = "<group>"; };
 		D3313A8622DD70D200FF3C3F /* LENTurnTableShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENTurnTableShowViewController.xib; sourceTree = "<group>"; };
@@ -107,6 +116,12 @@
 		D397BA8622D86B73004A8C92 /* LENColorSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENColorSelectViewController.h; sourceTree = "<group>"; };
 		D397BA8722D86B73004A8C92 /* LENColorSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENColorSelectViewController.m; sourceTree = "<group>"; };
 		D397BA8822D86B73004A8C92 /* LENColorSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENColorSelectViewController.xib; sourceTree = "<group>"; };
+		D3D5F60522E1B642009A3F90 /* LENTurnTableHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnTableHistoryViewController.h; sourceTree = "<group>"; };
+		D3D5F60622E1B642009A3F90 /* LENTurnTableHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENTurnTableHistoryViewController.m; sourceTree = "<group>"; };
+		D3D5F60722E1B642009A3F90 /* LENTurnTableHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENTurnTableHistoryViewController.xib; sourceTree = "<group>"; };
+		D3D5F60A22E1B790009A3F90 /* LENTurnHistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENTurnHistoryTableViewCell.h; sourceTree = "<group>"; };
+		D3D5F60B22E1B790009A3F90 /* LENTurnHistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENTurnHistoryTableViewCell.m; sourceTree = "<group>"; };
+		D3D5F60C22E1B790009A3F90 /* LENTurnHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENTurnHistoryTableViewCell.xib; sourceTree = "<group>"; };
 		E0CB73D667AE7A2A30733C03 /* libPods-TurnTable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TurnTable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7AF6BB793C3A5102C5018CB /* Pods-TurnTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-TurnTable/Pods-TurnTable.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,9 +239,15 @@
 				D3313A8422DD70D200FF3C3F /* LENTurnTableShowViewController.h */,
 				D3313A8522DD70D200FF3C3F /* LENTurnTableShowViewController.m */,
 				D3313A8622DD70D200FF3C3F /* LENTurnTableShowViewController.xib */,
+				D3D5F60522E1B642009A3F90 /* LENTurnTableHistoryViewController.h */,
+				D3D5F60622E1B642009A3F90 /* LENTurnTableHistoryViewController.m */,
+				D3D5F60722E1B642009A3F90 /* LENTurnTableHistoryViewController.xib */,
 				D3313A9322E095BA00FF3C3F /* LENTurnTablePreviewViewController.h */,
 				D3313A9422E095BA00FF3C3F /* LENTurnTablePreviewViewController.m */,
 				D3313A9522E095BA00FF3C3F /* LENTurnTablePreviewViewController.xib */,
+				D302685F22E5DB4900FB4EC4 /* LENSettingViewController.h */,
+				D302686022E5DB4900FB4EC4 /* LENSettingViewController.m */,
+				D302686122E5DB4900FB4EC4 /* LENSettingViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -251,6 +272,9 @@
 				D37575C722D5C01A000F6DD1 /* LENAddTrunTableViewCell.h */,
 				D37575C822D5C01A000F6DD1 /* LENAddTrunTableViewCell.m */,
 				D37575C922D5C01A000F6DD1 /* LENAddTrunTableViewCell.xib */,
+				D3D5F60A22E1B790009A3F90 /* LENTurnHistoryTableViewCell.h */,
+				D3D5F60B22E1B790009A3F90 /* LENTurnHistoryTableViewCell.m */,
+				D3D5F60C22E1B790009A3F90 /* LENTurnHistoryTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -393,8 +417,11 @@
 				D37575C222D5BA5F000F6DD1 /* LENAddTurnTableViewController.xib in Resources */,
 				D375757922D58347000F6DD1 /* LaunchScreen.storyboard in Resources */,
 				D375757622D58347000F6DD1 /* Assets.xcassets in Resources */,
+				D3D5F60922E1B642009A3F90 /* LENTurnTableHistoryViewController.xib in Resources */,
 				D37575A922D58845000F6DD1 /* LENTurnTableViewController.xib in Resources */,
+				D3D5F60E22E1B790009A3F90 /* LENTurnHistoryTableViewCell.xib in Resources */,
 				D397BA8A22D86B73004A8C92 /* LENColorSelectViewController.xib in Resources */,
+				D302686322E5DB4900FB4EC4 /* LENSettingViewController.xib in Resources */,
 				D3313A9722E095BA00FF3C3F /* LENTurnTablePreviewViewController.xib in Resources */,
 				D3313A8822DD70D200FF3C3F /* LENTurnTableShowViewController.xib in Resources */,
 				D375757422D58346000F6DD1 /* Main.storyboard in Resources */,
@@ -481,14 +508,17 @@
 				D375757122D58346000F6DD1 /* ViewController.m in Sources */,
 				D37575CA22D5C01A000F6DD1 /* LENAddTrunTableViewCell.m in Sources */,
 				D397BA8322D82EAE004A8C92 /* LENColorSelectImageView.m in Sources */,
+				D3D5F60822E1B642009A3F90 /* LENTurnTableHistoryViewController.m in Sources */,
 				D397BA8922D86B73004A8C92 /* LENColorSelectViewController.m in Sources */,
 				D37575C122D5BA5F000F6DD1 /* LENAddTurnTableViewController.m in Sources */,
 				D37575B622D58EC0000F6DD1 /* LENHandle.m in Sources */,
 				D375757C22D58347000F6DD1 /* main.m in Sources */,
 				D37575A822D58845000F6DD1 /* LENTurnTableViewController.m in Sources */,
+				D302686222E5DB4900FB4EC4 /* LENSettingViewController.m in Sources */,
 				D37575C522D5BAA9000F6DD1 /* LENTurnTableView.m in Sources */,
 				D37575B022D589F1000F6DD1 /* LENTurnTableModel.m in Sources */,
 				D375756E22D58346000F6DD1 /* AppDelegate.m in Sources */,
+				D3D5F60D22E1B790009A3F90 /* LENTurnHistoryTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -86,6 +86,44 @@
     }
 }
 
+# pragma mark -- 插入一个罗盘的记录
++ (void)insertHistoryInTrunTableWithTid:(NSString *)t_id title:(NSString *)title date:(NSString *)date{
+    NSArray *array = [self getTurnTablesArray];
+    if (array && array.count > 0) {
+        NSMutableArray *models = [NSMutableArray arrayWithArray:array];
+        for (int i = 0; i < models.count; i++) {
+            NSDictionary *m_dict = models[i];
+            NSString *m_id = [m_dict valueForKey:@"t_id"];
+            if ([t_id isEqualToString:m_id]) {
+                NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:m_dict];
+                NSArray *historys = [dict valueForKey:@"historys"];
+                if (historys && historys.count > 0) {
+                    NSMutableArray *historys_n = [NSMutableArray arrayWithArray:historys];
+                    NSDictionary *history = @{
+                                              @"title": title,
+                                              @"date": date
+                                              };
+                    [historys_n insertObject:history atIndex:0];
+                    [dict setValue:historys_n forKey:@"historys"];
+                    [models replaceObjectAtIndex:i withObject:dict];
+                    [self saveTurnTablesArray:models];
+                    break;
+                } else {
+                    NSDictionary *history = @{
+                                              @"title": title,
+                                              @"date": date
+                                              };
+                    NSArray *array = @[history];
+                    [dict setValue:array forKey:@"historys"];
+                    [models replaceObjectAtIndex:i withObject:dict];
+                    [self saveTurnTablesArray:models];
+                    break;
+                }
+            }
+        }
+    }
+}
+
 # pragma mark -- 删除一个罗盘
 + (void)deleteTurnTableWithTid:(NSString *)t_id{
     NSArray *array = [self getTurnTablesArray];
@@ -282,6 +320,23 @@
         colors = [NSMutableArray arrayWithArray:model.colors];
     }
     return colors;
+}
+
+# pragma mark -- 获取罗盘记录是否开启 默认开启
++ (BOOL)getTurnTableRecord{
+    BOOL record = YES;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults valueForKey:KTurnTableRecordOpen]) {
+        record = [[defaults valueForKey:KTurnTableRecordOpen] boolValue];
+    }
+    return record;
+}
+
+# pragma mark -- 设置罗盘记录是否开启
++ (void)setTurnTableRecord:(BOOL)record{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:[NSNumber numberWithBool:record] forKey:KTurnTableRecordOpen];
+    [defaults synchronize];
 }
 
 @end

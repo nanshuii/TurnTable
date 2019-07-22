@@ -13,6 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LENTurnTableShowViewController">
             <connections>
                 <outlet property="contentView" destination="F4o-rj-0IK" id="FPE-AE-8cs"/>
+                <outlet property="historyButton" destination="voH-Q9-p4C" id="f4e-Ao-Hgw"/>
+                <outlet property="historySaveButton" destination="YMF-ZF-Waz" id="biL-5n-eWc"/>
                 <outlet property="menuView" destination="lDg-I3-HHV" id="qsk-di-U3U"/>
                 <outlet property="nameLabel" destination="Qzi-uH-Leq" id="Nis-Ab-jR4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -43,6 +45,21 @@
                         <action selector="run:" destination="-1" eventType="touchUpInside" id="FnJ-CF-BKq"/>
                     </connections>
                 </button>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDM-xO-3vc">
+                    <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                    <items>
+                        <barButtonItem title="保存记录" id="YMF-ZF-Waz">
+                            <connections>
+                                <action selector="saveHistory:" destination="-1" id="nee-RF-e0D"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="记录历史" id="voH-Q9-p4C">
+                            <connections>
+                                <action selector="history:" destination="-1" id="Poi-5L-WJF"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-I3-HHV">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
@@ -187,14 +204,17 @@
             <constraints>
                 <constraint firstItem="Zc2-ct-94j" firstAttribute="centerX" secondItem="F4o-rj-0IK" secondAttribute="centerX" id="7wq-tf-2Oe"/>
                 <constraint firstItem="F4o-rj-0IK" firstAttribute="top" secondItem="Qzi-uH-Leq" secondAttribute="bottom" constant="40" id="8hS-Kn-Rkt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="wDM-xO-3vc" secondAttribute="bottom" id="9dN-pR-mel"/>
                 <constraint firstItem="lDg-I3-HHV" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Bfx-Lo-zWa"/>
                 <constraint firstItem="F4o-rj-0IK" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="Qe5-I1-e6Y"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="lDg-I3-HHV" secondAttribute="bottom" id="WyQ-rl-QBg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wDM-xO-3vc" secondAttribute="trailing" id="b5l-Ql-RxT"/>
                 <constraint firstItem="F4o-rj-0IK" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="bVx-Eg-fmO"/>
                 <constraint firstItem="lDg-I3-HHV" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="dpa-Hj-3VW"/>
                 <constraint firstItem="Qzi-uH-Leq" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="geD-GB-oCZ"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="lDg-I3-HHV" secondAttribute="trailing" id="laa-SO-N4h"/>
                 <constraint firstItem="Zc2-ct-94j" firstAttribute="top" secondItem="F4o-rj-0IK" secondAttribute="bottom" constant="40" id="npo-CR-asi"/>
+                <constraint firstItem="wDM-xO-3vc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="q13-MH-JYl"/>
                 <constraint firstItem="F4o-rj-0IK" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="zdg-YE-C8i"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

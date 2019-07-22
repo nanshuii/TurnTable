@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *historySaveButton;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *historyButton;
+
 
 @end
 

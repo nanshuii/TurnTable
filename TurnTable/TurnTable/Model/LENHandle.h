@@ -51,6 +51,15 @@ typedef void(^AlertTextFieldBlock)(NSString *text);
 + (void)updateTurnTableColors:(NSMutableArray *)colors tid:(NSString *)t_id;
 
 /**
+ 插入一个罗盘的记录
+
+ @param t_id t_id description
+ @param title title description
+ @param date date description
+ */
++ (void)insertHistoryInTrunTableWithTid:(NSString *)t_id title:(NSString *)title date:(NSString *)date;
+
+/**
  删除一个罗盘
 
  @param t_id t_id description
@@ -128,6 +137,21 @@ typedef void(^AlertTextFieldBlock)(NSString *text);
  @return return value description
  */
 + (NSMutableArray *)getColorsFormTurnTableModel:(LENTurnTableModel *)model;
+
+/**
+ 获取罗盘记录是否开启 默认开启
+
+ @return return value description
+ */
++ (BOOL)getTurnTableRecord;
+
+/**
+ 设置罗盘记录是否开启
+
+ @param record record description
+ */
++ (void)setTurnTableRecord:(BOOL)record;
+
 @end
 
 NS_ASSUME_NONNULL_END
