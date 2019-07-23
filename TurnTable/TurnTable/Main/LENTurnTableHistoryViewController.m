@@ -29,7 +29,7 @@
 
 - (void)setUpUI{
     self.title = @"记录历史";
-    UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithTitle:@"edit" style:(UIBarButtonItemStyleDone) target:self action:@selector(edit)];
+    UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:(UIBarButtonItemStyleDone) target:self action:@selector(edit)];
     [self.navigationItem setRightBarButtonItem:editItem];
     self.historys = [NSMutableArray arrayWithArray:self.model.historys];
     [self.contentView addSubview:self.tableView];

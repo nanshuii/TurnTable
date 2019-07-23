@@ -25,15 +25,16 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfj-97-Qze">
                     <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-Gu-tbf">
-                            <rect key="frame" x="196" y="11" width="22" height="22"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-Gu-tbf">
+                            <rect key="frame" x="191" y="6" width="32" height="32"/>
+                            <state key="normal" image="add"/>
                             <connections>
                                 <action selector="addAction:" destination="-1" eventType="touchUpInside" id="DSw-KD-u8u"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqd-WC-CVf">
-                            <rect key="frame" x="364" y="7" width="30" height="30"/>
-                            <state key="normal" title="edit"/>
+                            <rect key="frame" x="363" y="7" width="31" height="30"/>
+                            <state key="normal" title="编辑"/>
                             <connections>
                                 <action selector="edit:" destination="-1" eventType="touchUpInside" id="wdB-AY-G1r"/>
                             </connections>
@@ -75,4 +76,7 @@
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
+    <resources>
+        <image name="add" width="32" height="32"/>
+    </resources>
 </document>
