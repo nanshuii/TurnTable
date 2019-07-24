@@ -44,6 +44,7 @@
     
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidEndEditingNoti:) name:UITextFieldTextDidEndEditingNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeKeyboard) name:kRemoveTextFieldkeyboard object:nil];
 }
 
 # pragma mark -- 点击颜色
@@ -67,6 +68,11 @@
             _rateChangeBlock(self.rateTextField.text);
         }
     }
+}
+
+- (void)removeKeyboard{
+    [self.messageTextField resignFirstResponder];
+    [self.rateTextField resignFirstResponder];
 }
 
 - (void)removeNotifications{

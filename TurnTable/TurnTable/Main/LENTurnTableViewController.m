@@ -36,7 +36,6 @@
 }
 
 - (void)setUpUI{
-    self.title = @"TurnTable";
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"add"] style:(UIBarButtonItemStyleDone) target:self action:@selector(add)];
     [self.navigationItem setLeftBarButtonItem:addItem];
     UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"setting"] style:(UIBarButtonItemStyleDone) target:self action:@selector(setting)];

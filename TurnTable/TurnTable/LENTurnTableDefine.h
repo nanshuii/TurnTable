@@ -22,6 +22,7 @@
 # pragma mark -- 通知的键值
 #define kAddTurnTableChange @"kAddTurnTableChange"
 #define kTurnTableShowChange @"kTurnTableShowChange"
+#define kRemoveTextFieldkeyboard @"kRemoveTextFieldkeyboard"
 
 # pragma mark -- 屏幕的宽高
 #define kFullScreenWidth           ([UIScreen mainScreen].bounds.size.width)

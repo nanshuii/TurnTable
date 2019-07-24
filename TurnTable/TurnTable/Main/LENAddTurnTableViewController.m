@@ -201,12 +201,13 @@
 
 # pragma mark -- 预览
 - (IBAction)preview:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:kRemoveTextFieldkeyboard object:nil];
     [self modelCreateWithType:0];
 }
 
 # pragma mark -- 保存
 - (void)save{
-    LENLog(@"Save");
+    [[NSNotificationCenter defaultCenter] postNotificationName:kRemoveTextFieldkeyboard object:nil];
     [self modelCreateWithType:1];
 }
 
