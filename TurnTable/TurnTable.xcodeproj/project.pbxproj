@@ -691,7 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DF2WD834FA;
+				DEVELOPMENT_TEAM = FBPYVNBPCC;
 				GCC_PREFIX_HEADER = /Users/daimengren/programming/TurnTable/TurnTable/TurnTable/PrefixHeader.pch;
 				INFOPLIST_FILE = TurnTable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -699,7 +699,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.TurnTable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.FoodTurnTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -711,7 +711,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DF2WD834FA;
+				DEVELOPMENT_TEAM = FBPYVNBPCC;
 				GCC_PREFIX_HEADER = /Users/daimengren/programming/TurnTable/TurnTable/TurnTable/PrefixHeader.pch;
 				INFOPLIST_FILE = TurnTable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -719,7 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.TurnTable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledon.FoodTurnTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

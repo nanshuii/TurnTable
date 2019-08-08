@@ -324,9 +324,9 @@
     return colors;
 }
 
-# pragma mark -- 获取罗盘记录是否开启 默认开启
+# pragma mark -- 获取罗盘记录是否开启 默认关闭
 + (BOOL)getTurnTableRecord{
-    BOOL record = YES;
+    BOOL record = NO;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults valueForKey:KTurnTableRecordOpen]) {
         record = [[defaults valueForKey:KTurnTableRecordOpen] boolValue];

@@ -46,7 +46,13 @@
     }
     
     self.colors = [LENHandle getColorsFormTurnTableModel:self.model];
-    self.turnTableView = [[LENTurnTableView alloc] initWithFrame:CGRectMake(10, 0, kFullScreenWidth - 20, kFullScreenWidth - 20) titles:self.model.titles rates:self.model.rates colors:self.colors];
+    CGFloat width = kFullScreenWidth - 20;
+    CGFloat margin = 10;
+    if ((UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone)) {
+        width = kFullScreenWidth / 2 + 60;
+        margin = kFullScreenWidth / 4 - 30;
+    }
+    self.turnTableView = [[LENTurnTableView alloc] initWithFrame:CGRectMake(margin, 0, width, width) titles:self.model.titles rates:self.model.rates colors:self.colors];
     [self.turnTableView setFoodBlock:^(NSString * _Nonnull title, int index) {
         LENLog(@"title = %@ index = %i", title, index);
         weakSelf.nameLabel.text = title;

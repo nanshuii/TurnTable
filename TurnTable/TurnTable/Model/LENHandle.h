@@ -139,7 +139,7 @@ typedef void(^AlertTextFieldBlock)(NSString *text);
 + (NSMutableArray *)getColorsFormTurnTableModel:(LENTurnTableModel *)model;
 
 /**
- 获取罗盘记录是否开启 默认开启
+ 获取罗盘记录是否开启 默认关闭
 
  @return return value description
  */
